@@ -80,7 +80,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px 2rem 2rem;
+  padding: 70px 2rem 2rem;
   overflow: hidden;
   background: linear-gradient(160deg, #f0f4ff 0%, #ffffff 60%);
 }
