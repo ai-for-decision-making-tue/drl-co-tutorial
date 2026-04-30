@@ -11,20 +11,6 @@ This is the source code for the tutorial website accepted at the IJCAI-ECAI 2026
 └── README.md    ← This file
 ```
 
-## Deploying to GitHub Pages
-
-1. **Create a new GitHub repository** (e.g., `drl-co-tutorial`)
-2. **Upload all files** using the GitHub web interface:
-   - Click **Add file → Upload files**
-   - Drag and drop `index.html`, `style.css`, `main.js`
-   - Commit to `main` branch
-3. **Enable GitHub Pages**:
-   - Go to **Settings → Pages**
-   - Under *Source*, select **Deploy from a branch**
-   - Choose branch: `main`, folder: `/ (root)`
-   - Click **Save**
-4. Your site will be live at:
-   `https://YOUR-USERNAME.github.io/drl-co-tutorial/`
 
 ## Adding Materials Later
 
