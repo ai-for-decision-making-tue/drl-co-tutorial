@@ -2,21 +2,15 @@
    VARIABLES & RESET
    =========================== */
 :root {
-  --bg: #0c0f14;
-  --bg2: #111520;
-  --surface: #181d28;
-  --surface2: #1e2535;
-  --border: #2a3045;
-  --accent: #e8c547;
-  --accent2: #4fc3a1;
-  --text: #e8eaf0;
-  --text-muted: #7a8299;
-  --text-dim: #4a5270;
-  --serif: 'DM Serif Display', Georgia, serif;
-  --sans: 'DM Sans', sans-serif;
-  --mono: 'DM Mono', monospace;
-  --radius: 12px;
-  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --bg: #ffffff;
+  --bg2: #f5f7fa;
+  --surface: #f0f2f6;
+  --surface2: #e8ebf2;
+  --border: #d0d5e0;
+  --text: #0c0f14;
+  --text-muted: #4a5270;
+  --text-dim: #8a93aa;
+  ...
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
