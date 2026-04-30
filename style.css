@@ -37,7 +37,7 @@ a:hover { text-decoration: underline; }
   z-index: 100;
   padding: 0 2rem;
   backdrop-filter: blur(12px);
-  background: rgba(12, 15, 20, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid var(--border);
 }
 .nav-inner {
