@@ -234,7 +234,7 @@ a:hover { text-decoration: underline; }
 /* OVERVIEW */
 .overview-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
   align-items: start;
 }
