@@ -80,7 +80,7 @@ a:hover { text-decoration: underline; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 70px 2rem 2rem;
+  padding: 70px 1rem 1rem;
   overflow: hidden;
   background: linear-gradient(160deg, #f0f4ff 0%, #ffffff 60%);
 }
@@ -121,7 +121,7 @@ a:hover { text-decoration: underline; }
   font-size: clamp(2.5rem, 6vw, 5rem);
   line-height: 1.1;
   color: var(--text);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   opacity: 0;
   animation: fadeUp 0.7s 0.4s forwards;
 }
