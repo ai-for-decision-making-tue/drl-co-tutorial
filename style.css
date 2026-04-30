@@ -165,7 +165,7 @@ a:hover { text-decoration: underline; }
 .btn-outline {
   background: transparent;
   color: var(--text);
-  border: 1px solid var(--border);
+  border: 1px solid #9aa0b8;
 }
 .btn-outline:hover { border-color: var(--text-muted); background: var(--surface2); text-decoration: none; }
 
