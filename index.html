@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DRL for Combinatorial Optimization – IJCAI-ECAI 2026 Tutorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">DRL × CO</span>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg">
+      <canvas id="graph-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="badge">IJCAI-ECAI 2026 · Tutorial Track · ½ Day</div>
+      <h1 class="hero-title">
+        Deep Reinforcement Learning<br>
+        <em>for Combinatorial Optimization</em>
+      </h1>
+      <p class="hero-sub">
+        A hands-on, step-by-step guide to designing end-to-end DRL solutions —
+        from instance encoding to policy training.
+      </p>
+      <div class="hero-cta">
+        <a href="#schedule" class="btn btn-primary">View Schedule</a>
+        <a href="#materials" class="btn btn-outline">Get Materials</a>
+      </div>
+    </div>
+    <div class="hero-pillars">
+      <div class="pillar">
+        <span class="pillar-num">01</span>
+        <span class="pillar-label">Instance Encoding</span>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">02</span>
+        <span class="pillar-label">MDP Formulation</span>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">03</span>
+        <span class="pillar-label">Neural Architectures</span>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">04</span>
+        <span class="pillar-label">RL Training</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="section-label">About the Tutorial</div>
+      <div class="overview-grid">
+        <div class="overview-text">
+          <h2>Bridging ML, Decision-Making &amp; Optimization</h2>
+          <p>
+            Combinatorial optimization problems (COPs) arise across transportation, manufacturing, 
+            healthcare, and many other domains, but their NP-hard nature and discrete solution spaces 
+            make them less suitable to traditional gradient-based methods.
+          </p>
+          <p>
+            Deep reinforcement learning (DRL) has emerged as a compelling alternative, offering the 
+            ability to automatically learn high-quality solution strategies with minimal manual design. 
+            This tutorial provides a structured path — from fundamentals to frontier challenges.
+          </p>
+          <p>
+            Attendees will leave with the practical knowledge to design and implement a DRL-based solver 
+            from scratch, a research overview of how these methods extend to complex real-world variants, 
+            and a clear view of the open challenges that define the field.
+          </p>
+        </div>
+        <div class="overview-cards">
+          <div class="info-card">
+            <div class="info-icon">🎯</div>
+            <h3>Target Audience</h3>
+            <p>AI researchers, PhD students, and practitioners in logistics, scheduling, planning, and operations research.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📋</div>
+            <h3>Prerequisites</h3>
+            <p>Basic ML (neural nets, gradient descent) and basic RL (agent, environment, reward). No COP background required.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">⏱️</div>
+            <h3>Format</h3>
+            <p>Half-day tutorial — two 1:45 slots covering theory, research overview, and a hands-on coding exercise.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🔗</div>
+            <h3>Related Workshop</h3>
+            <p>Closely linked to the 8th DSO (Data Science meets Optimisation) workshop at IJCAI-ECAI 2026.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="section section-dark" id="schedule">
+    <div class="container">
+      <div class="section-label">Program</div>
+      <h2>Tutorial Schedule</h2>
+      <div class="schedule">
+
+        <div class="schedule-block">
+          <div class="block-header">
+            <div class="block-meta">
+              <span class="block-part">Part 1</span>
+              <span class="block-time">45 min</span>
+            </div>
+            <h3>Motivation and Design Pillars</h3>
+          </div>
+          <div class="block-items">
+            <div class="block-item">
+              <span class="item-time">15 min</span>
+              <div class="item-content">
+                <strong>Introduction and Motivation</strong>
+                <p>Why DRL for combinatorial optimization? Problem landscape and real-world relevance.</p>
+              </div>
+            </div>
+            <div class="block-item">
+              <span class="item-time">30 min</span>
+              <div class="item-content">
+                <strong>The Four Design Pillars: A Conceptual Overview</strong>
+                <p>Deep dive into instance encoding, MDP formulation, neural architectures, and training algorithms.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-block">
+          <div class="block-header">
+            <div class="block-meta">
+              <span class="block-part">Part 2</span>
+              <span class="block-time">60 min</span>
+            </div>
+            <h3>DRL for Classical COPs and Beyond</h3>
+          </div>
+          <div class="block-items">
+            <div class="block-item">
+              <span class="item-time">20 min</span>
+              <div class="item-content">
+                <strong>Overview of DRL Algorithms</strong>
+                <p>Policy gradient methods, actor-critic, REINFORCE, and modern variants.</p>
+              </div>
+            </div>
+            <div class="block-item">
+              <span class="item-time">20 min</span>
+              <div class="item-content">
+                <strong>DRL for Classical COPs</strong>
+                <p>Routing (VRP/TSP) and scheduling (JSP) as concrete running examples.</p>
+              </div>
+            </div>
+            <div class="block-item">
+              <span class="item-time">20 min</span>
+              <div class="item-content">
+                <strong>Beyond Classical TSP and JSP</strong>
+                <p>Extending to real-world variants with multiple objectives, constraints, and uncertainties.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-block">
+          <div class="block-header">
+            <div class="block-meta">
+              <span class="block-part">Part 3</span>
+              <span class="block-time">30 min</span>
+            </div>
+            <h3>Conclusion and Discussion</h3>
+          </div>
+          <div class="block-items">
+            <div class="block-item">
+              <span class="item-time">20 min</span>
+              <div class="item-content">
+                <strong>Open Challenges and Discussion</strong>
+                <p>Current frontiers: scalability, generalization, real-world deployment, and hybrid methods.</p>
+              </div>
+            </div>
+            <div class="block-item">
+              <span class="item-time">10 min</span>
+              <div class="item-content">
+                <strong>Q&amp;A</strong>
+                <p>Open questions from the audience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-block schedule-block--highlight">
+          <div class="block-header">
+            <div class="block-meta">
+              <span class="block-part">Part 4</span>
+              <span class="block-time">1 h 15 min</span>
+            </div>
+            <h3>Hands-On Exercise</h3>
+          </div>
+          <div class="block-items">
+            <div class="block-item"><span class="item-time">5 min</span><div class="item-content"><strong>Recap and Setup</strong><p>Environment installation and notebook walkthrough.</p></div></div>
+            <div class="block-item"><span class="item-time">10 min</span><div class="item-content"><strong>Code Walkthrough: Instance Encoding</strong><p>Representing problem instances for neural network consumption.</p></div></div>
+            <div class="block-item"><span class="item-time">10 min</span><div class="item-content"><strong>Code Walkthrough: MDP Formulations</strong><p>State, action, transition, and reward design.</p></div></div>
+            <div class="block-item"><span class="item-time">10 min</span><div class="item-content"><strong>Code Walkthrough: Neural Network Architectures</strong><p>Attention-based and GNN encoder-decoder designs.</p></div></div>
+            <div class="block-item"><span class="item-time">10 min</span><div class="item-content"><strong>Putting It All Together</strong><p>End-to-end training loop for a VRP solver.</p></div></div>
+            <div class="block-item"><span class="item-time">25 min</span><div class="item-content"><strong>Exercise: Exploration and Experimentation</strong><p>Modify and extend the solver on your own; guided challenges provided.</p></div></div>
+            <div class="block-item"><span class="item-time">5 min</span><div class="item-content"><strong>Wrap-up</strong><p>Key takeaways and pointers to further reading.</p></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section class="section" id="materials">
+    <div class="container">
+      <div class="section-label">Resources</div>
+      <h2>Tutorial Materials</h2>
+      <p class="section-intro">
+        All materials are based on the tutorial paper authored by the organizers. 
+        Slides, notebooks, and code will be released here before the tutorial date.
+      </p>
+      <div class="materials-grid">
+        <a href="https://research.tue.nl/files/374055575/final_DRL_book_chapter_2025_Copy_1_.pdf" target="_blank" class="material-card">
+          <div class="material-icon">📄</div>
+          <div class="material-info">
+            <h3>Tutorial Paper</h3>
+            <p>Wu, Bukhsh &amp; Zhang (2025). Deep Reinforcement Learning for Combinatorial Optimization: A Tutorial.</p>
+          </div>
+          <div class="material-arrow">→</div>
+        </a>
+        <div class="material-card material-card--soon">
+          <div class="material-icon">📊</div>
+          <div class="material-info">
+            <h3>Slides</h3>
+            <p>Presentation slides for all four parts of the tutorial. Available before the conference.</p>
+          </div>
+          <div class="material-badge">Coming Soon</div>
+        </div>
+        <div class="material-card material-card--soon">
+          <div class="material-icon">💻</div>
+          <div class="material-info">
+            <h3>Jupyter Notebooks</h3>
+            <p>Hands-on coding exercises covering all four design pillars with VRP and JSP examples.</p>
+          </div>
+          <div class="material-badge">Coming Soon</div>
+        </div>
+        <div class="material-card material-card--soon">
+          <div class="material-icon">🐍</div>
+          <div class="material-info">
+            <h3>Code Repository</h3>
+            <p>Full Python codebase with setup instructions. Compatible with Google Colab.</p>
+          </div>
+          <div class="material-badge">Coming Soon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANIZERS -->
+  <section class="section section-dark" id="organizers">
+    <div class="container">
+      <div class="section-label">People</div>
+      <h2>Organizers</h2>
+      <div class="organizers-grid">
+
+        <div class="organizer-card">
+          <div class="organizer-avatar">ZB</div>
+          <div class="organizer-info">
+            <h3>Zaharah Bukhsh</h3>
+            <div class="organizer-role">Assistant Professor · TU/e</div>
+            <p>Research on deep reinforcement learning for learning-based optimization methods addressing resource utilization, cost optimization, planning, and scheduling. Publications in JMLR, Machine Learning, ICML, ECAI.</p>
+            <div class="organizer-links">
+              <a href="https://scholar.google.com/citations?user=UqNe4lIAAAAJ&hl=en" target="_blank">Google Scholar</a>
+              <a href="https://dblp.org/pid/346/0206" target="_blank">DBLP</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="organizer-card">
+          <div class="organizer-avatar">YW</div>
+          <div class="organizer-info">
+            <h3>Yaoxin Wu</h3>
+            <div class="organizer-role">Assistant Professor · TU/e</div>
+            <p>Research spans deep learning, combinatorial optimization, and integer programming. Published in ICML, ICLR, NeurIPS, AAAI, KDD. 2000+ Google Scholar citations. Area chair at major ML venues.</p>
+            <div class="organizer-links">
+              <a href="https://scholar.google.com/citations?user=0qRnmK8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+              <a href="https://dblp.org/pid/192/4964.html" target="_blank">DBLP</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="organizer-card">
+          <div class="organizer-avatar">YZ</div>
+          <div class="organizer-info">
+            <h3>Yingqian Zhang</h3>
+            <div class="organizer-role">Associate Professor · TU/e</div>
+            <p>Chair of BNVKI (Benelux AI Association). Initiated the Data Science meets Optimisation workshop series at IJCAI (2019–2026). Tutorials at SIKS, EURO PhD School, ACP Summer School, SAIL Spring School, and IJCAI 2024.</p>
+            <div class="organizer-links">
+              <a href="https://scholar.google.com/citations?user=7sTIWeYAAAAJ&hl=en" target="_blank">Google Scholar</a>
+              <a href="https://dblp.org/pid/78/1261.html" target="_blank">DBLP</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="organizer-card">
+          <div class="organizer-avatar">JR</div>
+          <div class="organizer-info">
+            <h3>Jesse van Remmerden</h3>
+            <div class="organizer-role">PhD Student · TU/e</div>
+            <p>Research on DRL for complex scheduling and planning, bridging theoretical models and real-world deployment. Published in Neural Computing and Applications and Machine Learning on multi-objective DRL and offline RL for JSP.</p>
+            <div class="organizer-links">
+              <a href="https://scholar.google.com/citations?user=53Qmfec3f8EC" target="_blank">Google Scholar</a>
+              <a href="https://dblp.org/pid/380/2849.html" target="_blank">DBLP</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="organizer-card">
+          <div class="organizer-avatar">YY</div>
+          <div class="organizer-info">
+            <h3>Yue Yu</h3>
+            <div class="organizer-role">PhD Student · TU/e</div>
+            <p>Research on neural combinatorial optimization and DRL, particularly for iterative double auction mechanisms and vehicle routing. Contributions include diffusion-guided frameworks for auctions and cluster-aware attention modules. Published in Transportation Research Part E.</p>
+            <div class="organizer-links">
+              <a href="mailto:yyu012199@gmail.com">Contact</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="nav-logo">DRL × CO</span>
+        <p>IJCAI-ECAI 2026 Tutorial Track<br>
+        Information Systems Group · TU/e<br>
+        Atlas 5.406, Groene Loper 5, 5612 AE Eindhoven, NL</p>
+      </div>
+      <div class="footer-right">
+        <p>Related: <a href="#" target="_blank">8th DSO Workshop @ IJCAI-ECAI 2026</a></p>
+        <p>Tutorial paper: <a href="https://research.tue.nl/files/374055575/final_DRL_book_chapter_2025_Copy_1_.pdf" target="_blank">Wu, Bukhsh &amp; Zhang (2025)</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
