@@ -87,30 +87,50 @@
           <div class="block-header">
             <div class="block-meta">
               <span class="block-part">Part 1</span>
-              <span class="block-time">35 min</span>
+              <span class="block-time">1h 30min</span>
             </div>
-            <h3>Motivation and Design Pillars</h3>
+            <h3>Theoretical foundation</h3>
           </div>
           <div class="block-items">
             <div class="block-item">
               <span class="item-time">05 min</span>
               <div class="item-content">
                 <strong>Motivation and Background</strong>
-                <p>Why DRL for combinatorial optimization? Problem landscape and real-world relevance.</p>
+                <p>Why DRL for combinatorial optimization?</p>
               </div>
             </div>
             <div class="block-item">
               <span class="item-time">15 min</span>
               <div class="item-content">
                 <strong>The Four Design Pillars: A Conceptual Overview</strong>
-                <p>Deep dive into instance encoding, MDP formulation, and neural architectures.</p>
+                <p>Brief intro to instance encoding, MDP formulation, and neural architectures.</p>
               </div>
             </div>
             <div class="block-item">
               <span class="item-time">15 min</span>
               <div class="item-content">
                 <strong>Overview of DRL Algorithms</strong>
-                <p>Brief intro to policy gradient methods, actor-critic, REINFORCE, and modern variants.</p>
+                <p>Brief intro to value-based, policy gradient methods, and actor-critic methods.</p>
+              </div>
+            </div>
+            <div class="block-item">
+              <span class="item-time">15 min</span>
+              <div class="item-content">
+                <strong>RL for Classical COPs (VRP and JSP)</strong>
+                <p>Routing (VRP/TSP) and scheduling (JSP) as concrete running examples.</p>
+              </div>
+            </div>
+            <div class="block-item">
+              <span class="item-time">20 min</span>
+              <div class="item-content">
+                <strong>Beyond Classical TSP and JSP</strong>
+                <p>Extending to variants with multiple objectives, constraints, and uncertainties.</p>
+              </div>
+            </div>
+            <div class="block-item">
+              <span class="item-time">05 min</span>
+              <div class="item-content">
+                <strong>Q&amp;A</strong>
               </div>
             </div>
           </div>
@@ -120,64 +140,39 @@
           <div class="block-header">
             <div class="block-meta">
               <span class="block-part">Part 2</span>
-              <span class="block-time">55 min</span>
+              <span class="block-time">1h 30 min</span>
             </div>
-            <h3>DRL for Classical COPs and Beyond</h3>
+            <h3>Hands-on exercises</h3>
           </div>
           <div class="block-items">
             <div class="block-item">
-              <span class="item-time">15 min</span>
-              <div class="item-content">
-                <strong>DRL for Classical COPs</strong>
-                <p>Routing (VRP/TSP) and scheduling (JSP) as concrete running examples.</p>
-              </div>
-            </div>
-            <div class="block-item">
-              <span class="item-time">15 min</span>
-              <div class="item-content">
-                <strong>Beyond Classical TSP and JSP</strong>
-                <p>Extending to variants with multiple objectives, constraints, and uncertainties.</p>
-              </div>
-            </div>
-            <div class="block-item">
-              <span class="item-time">15 min</span>
+              <span class="item-time">20 min</span>
               <div class="item-content">
                 <strong>DRL for Real-World Problems</strong>
                 <p>DRL as an end-to-end paradigm for solving problems from diverse domains.</p>
               </div>
             </div>
             <div class="block-item">
-              <span class="item-time">05 min</span>
+              <span class="item-time">10 min</span>
               <div class="item-content">
-                <strong>Conclusions and Q&amp;A</strong>
-                <p>Open questions from the audience.</p>
+                <strong>Open challenges</strong>
+                <p>Challenges and take-home message.</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="schedule-block schedule-block--highlight">
-          <div class="block-header">
-            <div class="block-meta">
-              <span class="block-part">Part 3</span>
-              <span class="block-time">1 h 30 min</span>
-            </div>
-            <h3>Hands-On Exercise</h3>
-          </div>
-          <div class="block-item">
-              <span class="item-time">15 min</span>
+            <div class="block-item">
+              <span class="item-time">30 min</span>
               <div class="item-content">
-                <strong>Open Challenges and Discussion</strong>
-                <p>For example: scalability, generalization, and hybrid methods.</p>
+                <strong>Code walkthrough  - Job Shop Scheduling Problem  (JSP) </strong>
+                <p>From instance encoding to training your DRL agent.</p>
               </div>
             </div>
-          <div class="block-items">
-            <div class="block-item"><span class="item-time">5 min</span><div class="item-content"><strong>Recap and Setup</strong><p>Environment installation and notebook walkthrough.</p></div></div>
-            <div class="block-item"><span class="item-time">10 min</span><div class="item-content"><strong>Code Walkthrough: Instance Encoding</strong><p>Representing problem instances.</p></div></div>
-            <div class="block-item"><span class="item-time">10 min</span><div class="item-content"><strong>Code Walkthrough: MDP Formulations</strong><p>State, action, transition, and reward design.</p></div></div>
-            <div class="block-item"><span class="item-time">10 min</span><div class="item-content"><strong>Code Walkthrough: Neural Network Architectures</strong><p> Suitable NN architecture design for problem.</p></div></div>
-            <div class="block-item"><span class="item-time">10 min</span><div class="item-content"><strong>Putting It All Together</strong><p>End-to-end training loop.</p></div></div>
-            <div class="block-item"><span class="item-time">25 min</span><div class="item-content"><strong>Exercise: Exploration and Experimentation</strong><p>Explore the environment and problem charachteristics.</p></div></div>
-            <div class="block-item"><span class="item-time">5 min</span><div class="item-content"><strong>Wrap-up</strong><p>Key takeaways and pointers to further reading.</p></div></div>
+            <div class="block-item">
+              <span class="item-time">30 min</span>
+              <div class="item-content">
+                <strong>Code walkthrough  - Capacitated Vehicle Routing Problem (CVRP) </strong>
+                <p>From instance encoding to training your DRL agent.</p>
+              </div>
+            </div>
           </div>
         </div>
 
