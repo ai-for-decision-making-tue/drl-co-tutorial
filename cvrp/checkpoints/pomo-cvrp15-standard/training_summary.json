@@ -1,0 +1,38 @@
+{
+  "rl4co_version": "0.6.0",
+  "torch_version": "2.7.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "arguments": {
+    "output_dir": "outputs\\checkpoints",
+    "run_name": "pomo-cvrp15-standard",
+    "max_epochs": 30,
+    "train_data_size": 100000,
+    "val_data_size": 10000,
+    "batch_size": 1024,
+    "eval_size": 2048,
+    "eval_batch_size": 512,
+    "embed_dim": 128,
+    "num_encoder_layers": 6,
+    "learning_rate": 0.0001,
+    "seed": 1234,
+    "eval_seed": 4321,
+    "precision": "16-mixed"
+  },
+  "best_checkpoint": "C:\\Users\\lz_ce\\Desktop\\IJCAI-tutorial\\outputs\\checkpoints\\pomo-cvrp15-standard\\lightning-checkpoints\\epoch-029-step-2940.ckpt",
+  "best_validation_reward": -5.821340084075928,
+  "policy_state_dict": "C:\\Users\\lz_ce\\Desktop\\IJCAI-tutorial\\outputs\\checkpoints\\pomo-cvrp15-standard\\pomo_cvrp15_policy.pt",
+  "initial_metrics": {
+    "greedy_mean_cost": 10.954476356506348,
+    "greedy_std_cost": 1.6027058362960815,
+    "pomo_mean_cost": 9.81818675994873,
+    "pomo_std_cost": 1.3456920385360718
+  },
+  "trained_metrics": {
+    "greedy_mean_cost": 5.774563789367676,
+    "greedy_std_cost": 0.8701926469802856,
+    "pomo_mean_cost": 5.57000732421875,
+    "pomo_std_cost": 0.8197180032730103
+  },
+  "elapsed_seconds": 817.3120540999953,
+  "peak_vram_gb": 1.1571598052978516
+}

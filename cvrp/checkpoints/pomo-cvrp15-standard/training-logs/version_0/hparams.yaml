@@ -1,0 +1,32 @@
+policy_kwargs: {}
+baseline: shared
+num_augment: 1
+augment_fn: dihedral8
+first_aug_identity: true
+feats: null
+num_starts: null
+batch_size: 1024
+val_batch_size: 1024
+test_batch_size: 1024
+train_data_size: 100000
+val_data_size: 10000
+test_data_size: 10000
+optimizer_kwargs:
+  lr: 0.0001
+optimizer: Adam
+lr_scheduler: null
+lr_scheduler_kwargs:
+  milestones:
+  - 80
+  - 95
+  gamma: 0.1
+lr_scheduler_interval: epoch
+lr_scheduler_monitor: val/reward
+generate_default_data: false
+shuffle_train_dataloader: false
+dataloader_num_workers: 0
+data_dir: data/
+log_on_step: true
+metrics: {}
+baseline_kwargs: {}
+reward_scale: null
