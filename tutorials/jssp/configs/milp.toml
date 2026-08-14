@@ -1,0 +1,16 @@
+[instance]
+problem_instance = "/fajsp/dafjs/DAFJS01"
+
+[solver]
+time_limit = 3600       # time limit for the gurobi solver, in seconds
+
+[output]
+show_precedences = true # draw precedence relations graph of the problem instance
+show_gantt = true       # draw ganttchart of found solution
+save_gantt = true       # save ganttchart to file
+save_results = true     # save results to file
+exp_name = ""           # name of the experiment, used for saving results.
+                        # If empty (""), the name of the problem instance is used
+folder = ""             # folder to save results, used for saving results.
+                        # If empty (""), the results are saved to the current working directory.
+

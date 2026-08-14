@@ -1,0 +1,21 @@
+instance,jobs,machines,method,makespan,runtime_seconds,checkpoint
+ta11,20,15,L2D,1867.0,0.24803790007717907,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta11,20,15,Constructive SPT,2282.0,0.069963299902156,
+ta12,20,15,L2D,1806.0,0.23265199991874397,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta12,20,15,Constructive SPT,2290.0,0.06677039992064238,
+ta13,20,15,L2D,1774.0,0.22684999997727573,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta13,20,15,Constructive SPT,2198.0,0.06284030014649034,
+ta14,20,15,L2D,1796.0,0.2358585000038147,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta14,20,15,Constructive SPT,2184.0,0.06815549987368286,
+ta15,20,15,L2D,1884.0,0.25352479983121157,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta15,20,15,Constructive SPT,2163.0,0.06200459995307028,
+ta16,20,15,L2D,1795.0,0.2258177998010069,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta16,20,15,Constructive SPT,2407.0,0.07047859998419881,
+ta17,20,15,L2D,2050.0,0.22774140001274645,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta17,20,15,Constructive SPT,2254.0,0.0701874999795109,
+ta18,20,15,L2D,1806.0,0.22923399996943772,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta18,20,15,Constructive SPT,2160.0,0.060733500169590116,
+ta19,20,15,L2D,1779.0,0.2408509999513626,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta19,20,15,Constructive SPT,2238.0,0.06819100002758205,
+ta20,20,15,L2D,1955.0,0.22997159999795258,solution_methods\L2D\saved_models\6_6_1_99.pth
+ta20,20,15,Constructive SPT,2171.0,0.07739580003544688,

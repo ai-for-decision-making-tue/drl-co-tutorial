@@ -1,0 +1,1 @@
+[np.float64(668.5), np.float64(671.6), np.float64(664.8), np.float64(666.85), np.float64(664.45), np.float64(661.95), np.float64(662.0), np.float64(654.45), np.float64(660.25), np.float64(660.2)]
