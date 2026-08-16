@@ -1,4 +1,5 @@
-# DRL for Combinatorial Optimization – IJCAI-ECAI 2026 Tutorial Website
+# DRL for Combinatorial Optimization – IJCAI-ECAI 2026 Tutorial 
 
-This is the source code for the tutorial website accepted at the IJCAI-ECAI 2026 Tutorial Track.
+This repo containts slides and code of the tutorial.
+
 
